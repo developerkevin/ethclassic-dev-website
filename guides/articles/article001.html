@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Up and Running With Jade Service Runner | ethclassic.dev</title>
+    <meta name="description" content="An Ethereum Classic development website.">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,maximum-scale=1">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <meta name="twitter:site" content="@etclabscore">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ethereum Classic">
+  <meta property="og:site_name" content="ethclassic.dev">
+  <meta property="og:description" content="Ethereum Classic is an open-source, public, blockchain-based distributed computing platform featuring smart contract (scripting) functionality.">
+  <meta property="og:url" content="https://ethclassic.dev">
+  <meta property="og:image" content="https://ethclassic.dev/assets/img/hero-dark.503e3890.png">
+  <script async="true" defer="true" src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3">
+      new Crate({
+        server: '538420083614023710',
+        channel: '543112562405933116',
+        shard: 'https://disweb.deploys.io'
+      })
+    </script>
+    
+    <link rel="preload" href="/assets/css/0.styles.54f3ac94.css" as="style"><link rel="preload" href="/assets/js/app.796f1605.js" as="script"><link rel="preload" href="/assets/js/3.98daa8c8.js" as="script"><link rel="preload" href="/assets/js/7.e5ff1b3b.js" as="script"><link rel="prefetch" href="/assets/js/10.800d0a43.js"><link rel="prefetch" href="/assets/js/11.e03bba4d.js"><link rel="prefetch" href="/assets/js/12.58e79060.js"><link rel="prefetch" href="/assets/js/2.05b2c1c7.js"><link rel="prefetch" href="/assets/js/4.835a5fda.js"><link rel="prefetch" href="/assets/js/5.26a44ced.js"><link rel="prefetch" href="/assets/js/6.61a1cf75.js"><link rel="prefetch" href="/assets/js/8.1b6a913d.js"><link rel="prefetch" href="/assets/js/9.c91e2e43.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.54f3ac94.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div id="wrapper" class="has-sidebar" data-v-1aa8567c><header class="header-right flex" data-v-b942488a data-v-1aa8567c><div class="flex" data-v-b942488a><div class="sidebar-button" data-v-b942488a><svg width="25px" height="20px" viewBox="0 0 25 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" class="icon"><title>Hamburger menu button</title> <g transform="translate(-22.000000, -2.000000)"><g transform="translate(22.000000, 2.545974)"><path d="M24.7714844,0.5 L0,0.5"></path> <path d="M24.7714844,9.72701303 L0,9.72701303"></path> <path d="M24.7714844,18.9540261 L0,18.9540261"></path></g></g></svg> <a href="/" class="home-link router-link-active"><span class="site-name">ethclassic.dev</span></a></div> <nav class="nav-links sm-hide" data-v-b942488a><ul class="nav-ul"><li class="nav-item"><a href="/" class="nav-link">Ethereum Classic Development</a></li><li class="nav-item"><a href="/beginners/" class="nav-link">Beginners</a></li><li class="nav-item"><a href="/guides/" class="nav-link router-link-active">Guides</a></li><li class="nav-item"><a href="/api/" class="nav-link">API</a></li><li class="nav-item"><a href="/index/" class="nav-link">Index</a></li><li class="nav-item"><a href="/news/" class="nav-link">News</a></li></ul></nav></div> <div class="menu inline flex flex-center" data-v-b942488a><span class="pointer view-mode" data-v-b942488a><img alt="Switch to Dark Mode" src="/assets/img/icon-sun.f0087fa4.svg" class="hide-dark" data-v-b942488a> <img alt="Switch to Light Mode" src="/assets/img/icon-moon.0d522939.svg" class="show-dark" data-v-b942488a></span></div></header> <!----> <main class="page" data-v-1aa8567c><div class="content__default" data-v-1aa8567c><h1 id="up-and-running-with-jade-service-runner"><a href="#up-and-running-with-jade-service-runner" aria-hidden="true" class="header-anchor">↳</a> Up and Running With Jade Service Runner</h1> <h2 id="enviorment-requirements"><a href="#enviorment-requirements" aria-hidden="true" class="header-anchor">↳</a> Enviorment Requirements</h2> <ul><li>at least node 10.5.2</li> <li>at least npm 6.9</li> <li>typescript</li></ul> <h2 id="install"><a href="#install" aria-hidden="true" class="header-anchor">↳</a> Install</h2> <p>Install the latest version of <em>jade-service-runner</em></p> <div class="language-bash extra-class"><pre class="language-bash"><code>​npm <span class="token function">install</span> -g @etclabscore/jade-service-runner@latest
+</code></pre></div><p>Check <em>jade-service-runner</em> is installed</p> <div class="language-bash extra-class"><pre class="language-bash"><code>jade-service-runner -v
+</code></pre></div><h2 id="usage"><a href="#usage" aria-hidden="true" class="header-anchor">↳</a> Usage</h2> <p>See commands and options</p> <div class="language-bash extra-class"><pre class="language-bash"><code>jade-service-runner --help
+
+Usage: jade-service-runner <span class="token punctuation">[</span>options<span class="token punctuation">]</span>
+
+Options:
+  -v, --version              output the version number
+  -c, --config <span class="token operator">&lt;</span>configFile<span class="token operator">&gt;</span>  JSON <span class="token function">file</span> path pointing to a <span class="token function">service</span> runner config <span class="token function">file</span>
+  -d, --dir <span class="token operator">&lt;</span>directory<span class="token operator">&gt;</span>      Directory <span class="token keyword">for</span> storing services <span class="token punctuation">(</span>default: <span class="token string">&quot;./services&quot;</span><span class="token punctuation">)</span>
+  -p, --port <span class="token operator">&lt;</span>port<span class="token operator">&gt;</span>          Set port <span class="token keyword">for</span> <span class="token function">service</span> runner <span class="token punctuation">(</span>default: <span class="token string">&quot;8002&quot;</span><span class="token punctuation">)</span>
+  -t, --test                 Test configuration
+  -h, --help                 output usage information
+</code></pre></div></div></main> <div class="sidebar" data-v-1aa8567c><nav class="nav-links"><ul class="nav-ul"><li class="nav-item"><a href="/" class="nav-link">Ethereum Classic Development</a></li><li class="nav-item"><a href="/beginners/" class="nav-link">Beginners</a></li><li class="nav-item"><a href="/guides/" class="nav-link router-link-active">Guides</a></li><li class="nav-item"><a href="/api/" class="nav-link">API</a></li><li class="nav-item"><a href="/index/" class="nav-link">Index</a></li><li class="nav-item"><a href="/news/" class="nav-link">News</a></li></ul></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>Up and Running With Jade Service Runner</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/guides/articles/article001.html#enviorment-requirements" class="sidebar-link">Enviorment Requirements</a></li><li><a href="/guides/articles/article001.html#install" class="sidebar-link">Install</a></li><li><a href="/guides/articles/article001.html#usage" class="sidebar-link">Usage</a></li></ul></div></li></ul> </div> <footer class="footer" data-v-0c96c150 data-v-1aa8567c><ul data-v-0c96c150><li data-v-0c96c150><a href="https://github.com/etclabscore/ethclassic-dev-website" target="_blank" data-v-0c96c150>Github</a></li> <li data-v-0c96c150><a href="https://etclabscore.github.io/etclabscore/" target="_blank" data-v-0c96c150>ETC Labs Core</a></li> <li data-v-0c96c150><a href="https://etclabs.org/" target="_blank" data-v-0c96c150>ETC Labs Accelerator</a></li> <li data-v-0c96c150><a href="https://discord.gg/S9AT3X2" data-v-0c96c150>Discord</a></li></ul></footer></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.796f1605.js" defer></script><script src="/assets/js/3.98daa8c8.js" defer></script><script src="/assets/js/7.e5ff1b3b.js" defer></script>
+  </body>
+</html>
