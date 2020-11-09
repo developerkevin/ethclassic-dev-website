@@ -4,7 +4,10 @@
       <li><a href="https://github.com/etclabscore/ethclassic-dev-website" target="_blank">Github</a></li>      
       <li><a href="https://etclabscore.github.io/etclabscore/" target="_blank">ETC Labs Core</a></li>
       <li><a href="https://etclabs.org/" target="_blank">ETC Labs Accelerator</a></li>
-      <li><a href="https://discord.gg/S9AT3X2">Discord</a></li>
+      <li><a href="https://discord.gg/S9AT3X2">ETC Labs Discord</a></li>
+      <li><a href="https://discord.gg/CMfaU6M">Ethereum Classic Community Discord</a></li>
+      <li><a href="https://ethereumclassic.org/" target="_blank">Ethereum Classic Homepage</a></li>
+      <li><a href="https://github.com/ethereumclassic" target="_blank">Ethereum Classic Community Github</a></li>
     </ul>
   </footer>
 </template>
